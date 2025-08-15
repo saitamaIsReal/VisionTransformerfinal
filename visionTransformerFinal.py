@@ -16,6 +16,7 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from PIL import ImageFont
 import seaborn as sns
+from pathlib import Path
 
 # === Logging Setup ===
 import time
@@ -557,6 +558,7 @@ for img_idx, image_path in enumerate(image_paths):
         img_comb_pos.save(f"output/top_interactions/{img_idx}_top3_combined_pos.png")
         img_comb_neg.save(f"output/top_interactions/{img_idx}_top3_combined_neg.png")
         print("[SAVED] 3× kombinierte Top-3 Interaktionen pro Bild gespeichert")
+
 
 
 
