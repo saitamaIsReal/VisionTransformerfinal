@@ -1,16 +1,9 @@
---index-url https://download.pytorch.org/whl/cu118
-
-torch
-torchvision
-torchaudio
-
-transformers
+numpy
+pillow
 matplotlib
 seaborn
-pillow
-ipython
+transformers
 shapiq
-notebook
+ipython
 requests
-numpy
-
+overrides

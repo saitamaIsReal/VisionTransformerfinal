@@ -324,7 +324,7 @@ for img_idx, image_path in enumerate(image_paths):
             random_state=42,
         )
         result = approximator.approximate(
-            budget = 64000,
+            budget = 6,
             game=lambda c: value_function(
                 c,
                 processor, model, device, image,
@@ -337,7 +337,7 @@ for img_idx, image_path in enumerate(image_paths):
         save_dir = "output/results"
         os.makedirs(save_dir, exist_ok=True)
         result_path = os.path.join(save_dir, f"{img_idx}_{model_name.replace('/', '_')}.fsii")
-        result.save(path=result_path)
+        result.save(path=Path(result_path))
 
         # === Heatmap (nur 1st-Order Shapley Values) ===
         first_order = result.get_n_order(order=1)
