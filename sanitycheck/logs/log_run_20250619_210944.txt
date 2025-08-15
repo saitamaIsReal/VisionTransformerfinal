@@ -1,0 +1,62 @@
+[INFO] Sanity-Check gestartet um 20250619_210944
+=== Sanity-Check für google/vit-base-patch32-384 ===
+Predicted class: airliner
+Predicted logit: 13.710404396057129
+
+--- Top-10 2nd-Order Interactions für google/vit-base-patch32-384 ---
+(93,117): 0.7025
+(94,106): 0.5948
+(72,74): -0.4187
+(60,75): -0.4073
+(72,73): 0.3871
+(56,67): 0.3860
+(54,73): -0.3715
+(85,97): 0.3626
+(52,53): 0.3470
+(41,53): 0.3351
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'SGV', 'FBII', 'CHII', 'FSII', 'CHGV', 'k-SII', 'Moebius', 'BV', 'kADD-SHAP', 'EGV', 'BGV', 'SV', 'JointSV', 'EC', 'STII', 'BII', 'Co-Moebius', 'IGV', 'ELC', 'SII'}. This might lead to unexpected behavior.
+  warn(
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'SGV', 'FBII', 'CHII', 'FSII', 'CHGV', 'k-SII', 'Moebius', 'BV', 'kADD-SHAP', 'EGV', 'BGV', 'SV', 'JointSV', 'EC', 'STII', 'BII', 'Co-Moebius', 'IGV', 'ELC', 'SII'}. This might lead to unexpected behavior.
+  warn(
+→ Outputs für google/vit-base-patch32-384 in 'sanitycheck/' abgelegt
+=== Sanity-Check für facebook/deit-tiny-patch16-224 ===
+Predicted class: airliner
+Predicted logit: 7.096473217010498
+
+--- Top-10 2nd-Order Interactions für facebook/deit-tiny-patch16-224 ---
+(98,127): 0.2874
+(18,57): 0.2669
+(137,193): 0.2586
+(99,113): 0.2476
+(59,81): -0.2456
+(124,141): 0.2380
+(49,57): -0.2369
+(126,159): 0.2321
+(189,191): -0.2302
+(154,187): 0.2238
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'SGV', 'FBII', 'CHII', 'FSII', 'CHGV', 'k-SII', 'Moebius', 'BV', 'kADD-SHAP', 'EGV', 'BGV', 'SV', 'JointSV', 'EC', 'STII', 'BII', 'Co-Moebius', 'IGV', 'ELC', 'SII'}. This might lead to unexpected behavior.
+  warn(
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'SGV', 'FBII', 'CHII', 'FSII', 'CHGV', 'k-SII', 'Moebius', 'BV', 'kADD-SHAP', 'EGV', 'BGV', 'SV', 'JointSV', 'EC', 'STII', 'BII', 'Co-Moebius', 'IGV', 'ELC', 'SII'}. This might lead to unexpected behavior.
+  warn(
+→ Outputs für facebook/deit-tiny-patch16-224 in 'sanitycheck/' abgelegt
+=== Sanity-Check für akahana/vit-base-cats-vs-dogs ===
+Predicted class: dog
+Predicted logit: 2.2738702297210693
+
+--- Top-10 2nd-Order Interactions für akahana/vit-base-cats-vs-dogs ---
+(127,128): 0.3169
+(152,165): 0.2733
+(76,77): -0.2168
+(103,117): 0.1776
+(101,127): -0.1737
+(104,105): 0.1564
+(175,189): 0.1398
+(113,127): -0.1389
+(136,165): -0.1304
+(89,103): 0.1304
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'SGV', 'FBII', 'CHII', 'FSII', 'CHGV', 'k-SII', 'Moebius', 'BV', 'kADD-SHAP', 'EGV', 'BGV', 'SV', 'JointSV', 'EC', 'STII', 'BII', 'Co-Moebius', 'IGV', 'ELC', 'SII'}. This might lead to unexpected behavior.
+  warn(
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'SGV', 'FBII', 'CHII', 'FSII', 'CHGV', 'k-SII', 'Moebius', 'BV', 'kADD-SHAP', 'EGV', 'BGV', 'SV', 'JointSV', 'EC', 'STII', 'BII', 'Co-Moebius', 'IGV', 'ELC', 'SII'}. This might lead to unexpected behavior.
+  warn(
+→ Outputs für akahana/vit-base-cats-vs-dogs in 'sanitycheck/' abgelegt
+Sanity-Check abgeschlossen. Alle Grafiken in 'sanitycheck/' gespeichert.

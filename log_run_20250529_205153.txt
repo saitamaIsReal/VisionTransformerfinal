@@ -1,0 +1,747 @@
+[INFO] Logging gestartet um 20250529_205153
+Running on device: cuda
+ CUDA device name: NVIDIA GeForce GTX 1050 Ti
+
+===== Bild 1/8: images/cat1.jpg =====
+
+--- Evaluating google/vit-base-patch32-384 ---
+<PIL.Image.Image image mode=RGB size=384x384 at 0x251C063E8D0>
+Predicted class: tabby, tabby cat
+predicted logits: tensor(11.5028, device='cuda:0')
+ Logit full:  11.50
+ Logit empty: -0.05
+<PIL.Image.Image image mode=RGBA size=384x384 at 0x251C06F6960>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/0_google_vit-base-patch32-384_mixed.png
+yes shapiq: Interaction (29, 30): 0.4881
+yes shapiq: Interaction (41, 42): -0.4206
+yes shapiq: Interaction (41, 53): 0.3350
+yes shapiq: Interaction (16, 28): 0.3112
+yes shapiq: Interaction (16, 19): -0.2898
+yes shapiq: Interaction (53, 55): -0.2800
+yes shapiq: Interaction (16, 29): -0.2792
+yes shapiq: Interaction (15, 100): -0.2454
+yes shapiq: Interaction (16, 42): 0.2384
+yes shapiq: Interaction (30, 52): -0.2350
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – google/vit-base-patch32-384: ((29, 30),0.4880898893827329); ((41, 42),-0.42057715696910464); ((41, 53),0.33496622400985965)
+🟢 pos   – google/vit-base-patch32-384: ((29, 30),0.4880898893827329); ((41, 53),0.33496622400985965); ((16, 28),0.31119340933957484)
+🔵 neg   – google/vit-base-patch32-384: ((41, 42),-0.42057715696910464); ((16, 19),-0.2897891470184057); ((53, 55),-0.2800362442749477)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/0_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/0_google_vit-base-patch32-384_shapley_only.png
+
+--- Evaluating facebook/deit-tiny-patch16-224 ---
+<PIL.Image.Image image mode=RGB size=224x224 at 0x2521A514590>
+Predicted class: tabby, tabby cat
+predicted logits: tensor(5.7123, device='cuda:0')
+ Logit full:  5.71
+ Logit empty: 0.24
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x251C6F89B80>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/0_facebook_deit-tiny-patch16-224_mixed.png
+yes shapiq: Interaction (22, 36): 0.2082
+yes shapiq: Interaction (75, 89): 0.1343
+yes shapiq: Interaction (35, 49): 0.1273
+yes shapiq: Interaction (64, 79): -0.1251
+yes shapiq: Interaction (63, 64): 0.1238
+yes shapiq: Interaction (61, 89): 0.1238
+yes shapiq: Interaction (62, 64): -0.1236
+yes shapiq: Interaction (88, 89): 0.1232
+yes shapiq: Interaction (76, 77): -0.1200
+yes shapiq: Interaction (19, 33): 0.1179
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – facebook/deit-tiny-patch16-224: ((22, 36),0.20816588461699675); ((75, 89),0.13427001425897492); ((35, 49),0.12726665735869475)
+🟢 pos   – facebook/deit-tiny-patch16-224: ((22, 36),0.20816588461699675); ((75, 89),0.13427001425897492); ((35, 49),0.12726665735869475)
+🔵 neg   – facebook/deit-tiny-patch16-224: ((64, 79),-0.12507847937587147); ((62, 64),-0.12363977891058403); ((76, 77),-0.12000215652791196)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/0_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/0_facebook_deit-tiny-patch16-224_shapley_only.png
+
+--- Evaluating akahana/vit-base-cats-vs-dogs ---
+<PIL.Image.Image image mode=RGB size=224x224 at 0x251BE5A4FB0>
+Predicted class: cat
+predicted logits: tensor(3.3056, device='cuda:0')
+ Logit full:  3.31
+ Logit empty: 0.46
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x251C07A1A90>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/0_akahana_vit-base-cats-vs-dogs_mixed.png
+yes shapiq: Interaction (23, 51): 0.1695
+yes shapiq: Interaction (33, 34): -0.1317
+yes shapiq: Interaction (23, 37): 0.1155
+yes shapiq: Interaction (62, 76): -0.1152
+yes shapiq: Interaction (61, 75): 0.1086
+yes shapiq: Interaction (18, 23): -0.0958
+yes shapiq: Interaction (91, 97): -0.0952
+yes shapiq: Interaction (49, 91): -0.0948
+yes shapiq: Interaction (61, 62): -0.0938
+yes shapiq: Interaction (35, 62): 0.0905
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – akahana/vit-base-cats-vs-dogs: ((23, 51),0.16947033339488848); ((33, 34),-0.131726734466457); ((23, 37),0.11552760958079497)
+🟢 pos   – akahana/vit-base-cats-vs-dogs: ((23, 51),0.16947033339488848); ((23, 37),0.11552760958079497); ((61, 75),0.10864331438810919)
+🔵 neg   – akahana/vit-base-cats-vs-dogs: ((33, 34),-0.131726734466457); ((62, 76),-0.11524077770285578); ((18, 23),-0.09579855260871198)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/0_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/0_akahana_vit-base-cats-vs-dogs_shapley_only.png
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x25217632900>
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x25217F1A930>
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2521A358650>
+[SAVED] 3× kombinierte Top-3 Interaktionen pro Bild gespeichert
+
+===== Bild 2/8: images/cat2.jpg =====
+
+--- Evaluating google/vit-base-patch32-384 ---
+<PIL.Image.Image image mode=RGB size=384x384 at 0x25224386C90>
+Predicted class: tabby, tabby cat
+predicted logits: tensor(9.6226, device='cuda:0')
+ Logit full:  9.62
+ Logit empty: -0.05
+<PIL.Image.Image image mode=RGBA size=384x384 at 0x2521A50FD70>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/1_google_vit-base-patch32-384_mixed.png
+yes shapiq: Interaction (65, 66): -1.3061
+yes shapiq: Interaction (53, 54): -0.7152
+yes shapiq: Interaction (54, 66): -0.6019
+yes shapiq: Interaction (54, 65): -0.5157
+yes shapiq: Interaction (65, 78): -0.4954
+yes shapiq: Interaction (89, 90): 0.4871
+yes shapiq: Interaction (42, 54): 0.4238
+yes shapiq: Interaction (42, 78): -0.3919
+yes shapiq: Interaction (65, 90): -0.3701
+yes shapiq: Interaction (41, 42): -0.3609
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – google/vit-base-patch32-384: ((65, 66),-1.3061416716279404); ((53, 54),-0.7151674143169614); ((54, 66),-0.6019044588221513)
+🟢 pos   – google/vit-base-patch32-384: ((89, 90),0.48706373951451254); ((42, 54),0.4238082930090355)
+🔵 neg   – google/vit-base-patch32-384: ((65, 66),-1.3061416716279404); ((53, 54),-0.7151674143169614); ((54, 66),-0.6019044588221513)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/1_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/1_google_vit-base-patch32-384_shapley_only.png
+
+--- Evaluating facebook/deit-tiny-patch16-224 ---
+<PIL.Image.Image image mode=RGB size=224x224 at 0x2521BB06F90>
+Predicted class: tabby, tabby cat
+predicted logits: tensor(5.3668, device='cuda:0')
+ Logit full:  5.37
+ Logit empty: 0.24
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x25217656900>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/1_facebook_deit-tiny-patch16-224_mixed.png
+yes shapiq: Interaction (76, 77): -2.1083
+yes shapiq: Interaction (63, 77): 0.7303
+yes shapiq: Interaction (62, 76): 0.6345
+yes shapiq: Interaction (77, 90): 0.3574
+yes shapiq: Interaction (77, 91): 0.3294
+yes shapiq: Interaction (63, 91): 0.2771
+yes shapiq: Interaction (146, 147): -0.2376
+yes shapiq: Interaction (91, 105): 0.2272
+yes shapiq: Interaction (91, 92): 0.2217
+yes shapiq: Interaction (48, 62): -0.2203
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – facebook/deit-tiny-patch16-224: ((76, 77),-2.1082773062149167); ((63, 77),0.7302647836593388); ((62, 76),0.6344635440063467)
+🟢 pos   – facebook/deit-tiny-patch16-224: ((63, 77),0.7302647836593388); ((62, 76),0.6344635440063467); ((77, 90),0.35736336636753124)
+🔵 neg   – facebook/deit-tiny-patch16-224: ((76, 77),-2.1082773062149167); ((146, 147),-0.2376213045998625); ((48, 62),-0.22032870055565273)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/1_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/1_facebook_deit-tiny-patch16-224_shapley_only.png
+
+--- Evaluating akahana/vit-base-cats-vs-dogs ---
+<PIL.Image.Image image mode=RGB size=224x224 at 0x2522433AB70>
+Predicted class: cat
+predicted logits: tensor(3.2628, device='cuda:0')
+ Logit full:  3.26
+ Logit empty: 0.46
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x251E7C9DCA0>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/1_akahana_vit-base-cats-vs-dogs_mixed.png
+yes shapiq: Interaction (76, 77): -0.7647
+yes shapiq: Interaction (77, 91): -0.4872
+yes shapiq: Interaction (76, 90): -0.2605
+yes shapiq: Interaction (50, 77): -0.1971
+yes shapiq: Interaction (76, 91): -0.1769
+yes shapiq: Interaction (91, 105): 0.1712
+yes shapiq: Interaction (63, 77): 0.1611
+yes shapiq: Interaction (77, 90): -0.1445
+yes shapiq: Interaction (76, 105): -0.1364
+yes shapiq: Interaction (62, 90): 0.1157
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – akahana/vit-base-cats-vs-dogs: ((76, 77),-0.764667768690095); ((77, 91),-0.4872431364968827); ((76, 90),-0.2604919982244916)
+🟢 pos   – akahana/vit-base-cats-vs-dogs: ((91, 105),0.17116051209665248); ((63, 77),0.1610714502531243); ((62, 90),0.11568480046829438)
+🔵 neg   – akahana/vit-base-cats-vs-dogs: ((76, 77),-0.764667768690095); ((77, 91),-0.4872431364968827); ((76, 90),-0.2604919982244916)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/1_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/1_akahana_vit-base-cats-vs-dogs_shapley_only.png
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2522318B6E0>
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2521A179AF0>
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2521A4D19A0>
+[SAVED] 3× kombinierte Top-3 Interaktionen pro Bild gespeichert
+
+===== Bild 3/8: images/cat3.jpg =====
+
+--- Evaluating google/vit-base-patch32-384 ---
+<PIL.Image.Image image mode=RGB size=384x384 at 0x2521A4D29C0>
+Predicted class: wardrobe, closet, press
+predicted logits: tensor(9.7127, device='cuda:0')
+ Logit full:  9.71
+ Logit empty: -0.07
+<PIL.Image.Image image mode=RGBA size=384x384 at 0x252242CA7B0>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/2_google_vit-base-patch32-384_mixed.png
+yes shapiq: Interaction (41, 53): 0.4453
+yes shapiq: Interaction (41, 64): 0.4079
+yes shapiq: Interaction (106, 119): -0.3942
+yes shapiq: Interaction (41, 52): 0.3838
+yes shapiq: Interaction (76, 88): -0.3588
+yes shapiq: Interaction (59, 71): 0.3492
+yes shapiq: Interaction (40, 124): 0.3459
+yes shapiq: Interaction (41, 77): -0.3134
+yes shapiq: Interaction (40, 41): 0.3018
+yes shapiq: Interaction (107, 119): 0.2838
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – google/vit-base-patch32-384: ((41, 53),0.4453388282499104); ((41, 64),0.40786529671408495); ((106, 119),-0.3941538532512387)
+🟢 pos   – google/vit-base-patch32-384: ((41, 53),0.4453388282499104); ((41, 64),0.40786529671408495); ((41, 52),0.383811374350259)
+🔵 neg   – google/vit-base-patch32-384: ((106, 119),-0.3941538532512387); ((76, 88),-0.35879841444984995); ((41, 77),-0.31335516105530004)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/2_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/2_google_vit-base-patch32-384_shapley_only.png
+
+--- Evaluating facebook/deit-tiny-patch16-224 ---
+<PIL.Image.Image image mode=RGB size=224x224 at 0x251C0794D70>
+Predicted class: Egyptian cat
+predicted logits: tensor(5.3227, device='cuda:0')
+ Logit full:  5.32
+ Logit empty: 0.43
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x251E7C9D2E0>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/2_facebook_deit-tiny-patch16-224_mixed.png
+yes shapiq: Interaction (61, 75): 0.3436
+yes shapiq: Interaction (48, 62): 0.3414
+yes shapiq: Interaction (48, 75): 0.3272
+yes shapiq: Interaction (75, 89): 0.2519
+yes shapiq: Interaction (62, 76): -0.2242
+yes shapiq: Interaction (48, 89): -0.2173
+yes shapiq: Interaction (61, 89): 0.1954
+yes shapiq: Interaction (118, 132): -0.1674
+yes shapiq: Interaction (48, 61): -0.1647
+yes shapiq: Interaction (173, 174): -0.1623
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – facebook/deit-tiny-patch16-224: ((61, 75),0.34360162654769255); ((48, 62),0.34139581131756563); ((48, 75),0.3271513660598297)
+🟢 pos   – facebook/deit-tiny-patch16-224: ((61, 75),0.34360162654769255); ((48, 62),0.34139581131756563); ((48, 75),0.3271513660598297)
+🔵 neg   – facebook/deit-tiny-patch16-224: ((62, 76),-0.22416840767128898); ((48, 89),-0.2172689115516415); ((118, 132),-0.1673859655538242)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/2_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/2_facebook_deit-tiny-patch16-224_shapley_only.png
+
+--- Evaluating akahana/vit-base-cats-vs-dogs ---
+<PIL.Image.Image image mode=RGB size=224x224 at 0x25223A97560>
+Predicted class: cat
+predicted logits: tensor(3.2548, device='cuda:0')
+ Logit full:  3.25
+ Logit empty: 0.46
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x25214E08320>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/2_akahana_vit-base-cats-vs-dogs_mixed.png
+yes shapiq: Interaction (48, 62): 0.2498
+yes shapiq: Interaction (75, 89): -0.2318
+yes shapiq: Interaction (75, 76): 0.1681
+yes shapiq: Interaction (61, 62): 0.1460
+yes shapiq: Interaction (61, 75): -0.1451
+yes shapiq: Interaction (74, 75): 0.1305
+yes shapiq: Interaction (62, 76): -0.1228
+yes shapiq: Interaction (171, 172): -0.0938
+yes shapiq: Interaction (61, 160): 0.0840
+yes shapiq: Interaction (47, 75): 0.0823
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – akahana/vit-base-cats-vs-dogs: ((48, 62),0.2497925008092523); ((75, 89),-0.23179583398052975); ((75, 76),0.1681271341105126)
+🟢 pos   – akahana/vit-base-cats-vs-dogs: ((48, 62),0.2497925008092523); ((75, 76),0.1681271341105126); ((61, 62),0.14596048388503227)
+🔵 neg   – akahana/vit-base-cats-vs-dogs: ((75, 89),-0.23179583398052975); ((61, 75),-0.14507207705971464); ((62, 76),-0.12275483452028259)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/2_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/2_akahana_vit-base-cats-vs-dogs_shapley_only.png
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2521BB04BC0>
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x252175987A0>
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2521A1DD2E0>
+[SAVED] 3× kombinierte Top-3 Interaktionen pro Bild gespeichert
+
+===== Bild 4/8: images/cat4.jpg =====
+
+--- Evaluating google/vit-base-patch32-384 ---
+<PIL.Image.Image image mode=RGB size=384x384 at 0x252176559A0>
+Predicted class: tabby, tabby cat
+predicted logits: tensor(12.6895, device='cuda:0')
+ Logit full:  12.69
+ Logit empty: -0.05
+<PIL.Image.Image image mode=RGBA size=384x384 at 0x25220DF5190>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/3_google_vit-base-patch32-384_mixed.png
+yes shapiq: Interaction (43, 56): -0.3890
+yes shapiq: Interaction (42, 66): 0.3828
+yes shapiq: Interaction (76, 88): -0.3572
+yes shapiq: Interaction (66, 89): -0.3441
+yes shapiq: Interaction (54, 56): -0.3420
+yes shapiq: Interaction (54, 68): -0.3238
+yes shapiq: Interaction (33, 44): -0.3137
+yes shapiq: Interaction (43, 45): 0.2880
+yes shapiq: Interaction (54, 77): -0.2692
+yes shapiq: Interaction (53, 54): 0.2665
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – google/vit-base-patch32-384: ((43, 56),-0.3890346039678357); ((42, 66),0.38275252844253066); ((76, 88),-0.3571924781156008)
+🟢 pos   – google/vit-base-patch32-384: ((42, 66),0.38275252844253066); ((43, 45),0.2879692027727405); ((53, 54),0.2664791400117319)
+🔵 neg   – google/vit-base-patch32-384: ((43, 56),-0.3890346039678357); ((76, 88),-0.3571924781156008); ((66, 89),-0.34409531609959726)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/3_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/3_google_vit-base-patch32-384_shapley_only.png
+
+--- Evaluating facebook/deit-tiny-patch16-224 ---
+<PIL.Image.Image image mode=RGB size=224x224 at 0x25219025AF0>
+Predicted class: tabby, tabby cat
+predicted logits: tensor(6.1792, device='cuda:0')
+ Logit full:  6.18
+ Logit empty: 0.24
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2521BB06EA0>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/3_facebook_deit-tiny-patch16-224_mixed.png
+yes shapiq: Interaction (78, 79): -0.2720
+yes shapiq: Interaction (51, 65): 0.2096
+yes shapiq: Interaction (91, 161): -0.1878
+yes shapiq: Interaction (65, 77): -0.1746
+yes shapiq: Interaction (65, 66): -0.1692
+yes shapiq: Interaction (64, 121): -0.1564
+yes shapiq: Interaction (63, 79): -0.1463
+yes shapiq: Interaction (76, 90): 0.1447
+yes shapiq: Interaction (64, 65): -0.1443
+yes shapiq: Interaction (79, 92): 0.1432
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – facebook/deit-tiny-patch16-224: ((78, 79),-0.2720448598871305); ((51, 65),0.20955448626474096); ((91, 161),-0.18779532419869824)
+🟢 pos   – facebook/deit-tiny-patch16-224: ((51, 65),0.20955448626474096); ((76, 90),0.144733720824314); ((79, 92),0.14316682741548556)
+🔵 neg   – facebook/deit-tiny-patch16-224: ((78, 79),-0.2720448598871305); ((91, 161),-0.18779532419869824); ((65, 77),-0.17460965501801248)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/3_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/3_facebook_deit-tiny-patch16-224_shapley_only.png
+
+--- Evaluating akahana/vit-base-cats-vs-dogs ---
+<PIL.Image.Image image mode=RGB size=224x224 at 0x25224338380>
+Predicted class: cat
+predicted logits: tensor(3.2477, device='cuda:0')
+ Logit full:  3.25
+ Logit empty: 0.46
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2521A2AEEA0>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/3_akahana_vit-base-cats-vs-dogs_mixed.png
+yes shapiq: Interaction (77, 79): -0.7685
+yes shapiq: Interaction (116, 130): -0.6321
+yes shapiq: Interaction (79, 93): 0.5814
+yes shapiq: Interaction (77, 91): 0.5226
+yes shapiq: Interaction (78, 93): -0.4816
+yes shapiq: Interaction (79, 116): 0.4744
+yes shapiq: Interaction (36, 50): 0.4283
+yes shapiq: Interaction (79, 130): 0.3942
+yes shapiq: Interaction (77, 116): 0.3793
+yes shapiq: Interaction (22, 50): 0.3675
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – akahana/vit-base-cats-vs-dogs: ((77, 79),-0.7684761272434144); ((116, 130),-0.632125504432698); ((79, 93),0.5814447390066031)
+🟢 pos   – akahana/vit-base-cats-vs-dogs: ((79, 93),0.5814447390066031); ((77, 91),0.5225579381246853); ((79, 116),0.4743726122579939)
+🔵 neg   – akahana/vit-base-cats-vs-dogs: ((77, 79),-0.7684761272434144); ((116, 130),-0.632125504432698); ((78, 93),-0.4816416135289375)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/3_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/3_akahana_vit-base-cats-vs-dogs_shapley_only.png
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x25221A57B30>
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x25217F1A390>
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2521C5B1D30>
+[SAVED] 3× kombinierte Top-3 Interaktionen pro Bild gespeichert
+
+===== Bild 5/8: images/lucky.jpeg =====
+
+--- Evaluating google/vit-base-patch32-384 ---
+<PIL.Image.Image image mode=RGB size=384x384 at 0x252175C3AD0>
+Predicted class: studio couch, day bed
+predicted logits: tensor(7.7776, device='cuda:0')
+ Logit full:  7.78
+ Logit empty: 0.75
+<PIL.Image.Image image mode=RGBA size=384x384 at 0x2522325C800>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/4_google_vit-base-patch32-384_mixed.png
+yes shapiq: Interaction (67, 79): 0.6524
+yes shapiq: Interaction (89, 90): 0.3841
+yes shapiq: Interaction (66, 78): 0.3614
+yes shapiq: Interaction (92, 93): -0.3052
+yes shapiq: Interaction (67, 68): -0.2297
+yes shapiq: Interaction (66, 79): 0.2285
+yes shapiq: Interaction (85, 86): 0.2194
+yes shapiq: Interaction (79, 81): 0.2126
+yes shapiq: Interaction (108, 109): -0.2115
+yes shapiq: Interaction (142, 143): 0.2066
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – google/vit-base-patch32-384: ((67, 79),0.6524218140054276); ((89, 90),0.3841361149033441); ((66, 78),0.36143568178231267)
+🟢 pos   – google/vit-base-patch32-384: ((67, 79),0.6524218140054276); ((89, 90),0.3841361149033441); ((66, 78),0.36143568178231267)
+🔵 neg   – google/vit-base-patch32-384: ((92, 93),-0.305171963199782); ((67, 68),-0.2297176460861676); ((108, 109),-0.21150407872340465)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/4_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/4_google_vit-base-patch32-384_shapley_only.png
+
+--- Evaluating facebook/deit-tiny-patch16-224 ---
+<PIL.Image.Image image mode=RGB size=224x224 at 0x25220E7FDA0>
+Predicted class: Labrador retriever
+predicted logits: tensor(4.8401, device='cuda:0')
+ Logit full:  4.84
+ Logit empty: 0.33
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x25220F4EC00>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/4_facebook_deit-tiny-patch16-224_mixed.png
+yes shapiq: Interaction (92, 93): 0.6997
+yes shapiq: Interaction (116, 117): -0.3439
+yes shapiq: Interaction (115, 117): -0.3348
+yes shapiq: Interaction (114, 115): 0.2911
+yes shapiq: Interaction (91, 92): -0.2855
+yes shapiq: Interaction (103, 117): 0.2580
+yes shapiq: Interaction (116, 130): 0.2529
+yes shapiq: Interaction (91, 105): 0.2198
+yes shapiq: Interaction (130, 131): -0.2166
+yes shapiq: Interaction (102, 116): 0.1963
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – facebook/deit-tiny-patch16-224: ((92, 93),0.699663611203904); ((116, 117),-0.3439450409089676); ((115, 117),-0.3347795235417828)
+🟢 pos   – facebook/deit-tiny-patch16-224: ((92, 93),0.699663611203904); ((114, 115),0.2910946674214239); ((103, 117),0.25800223448431203)
+🔵 neg   – facebook/deit-tiny-patch16-224: ((116, 117),-0.3439450409089676); ((115, 117),-0.3347795235417828); ((91, 92),-0.2855100217152713)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/4_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/4_facebook_deit-tiny-patch16-224_shapley_only.png
+
+--- Evaluating akahana/vit-base-cats-vs-dogs ---
+<PIL.Image.Image image mode=RGB size=224x224 at 0x2521B14D850>
+Predicted class: dog
+predicted logits: tensor(1.8752, device='cuda:0')
+ Logit full:  1.88
+ Logit empty: -0.43
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2521B14CDA0>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/4_akahana_vit-base-cats-vs-dogs_mixed.png
+yes shapiq: Interaction (91, 105): 0.5204
+yes shapiq: Interaction (90, 91): 0.2572
+yes shapiq: Interaction (91, 92): -0.2435
+yes shapiq: Interaction (105, 106): 0.2385
+yes shapiq: Interaction (104, 119): -0.2108
+yes shapiq: Interaction (119, 122): -0.1970
+yes shapiq: Interaction (118, 119): 0.1784
+yes shapiq: Interaction (102, 116): -0.1751
+yes shapiq: Interaction (93, 119): 0.1741
+yes shapiq: Interaction (105, 119): -0.1698
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – akahana/vit-base-cats-vs-dogs: ((91, 105),0.5203937240851382); ((90, 91),0.2571907167432796); ((91, 92),-0.243505295376714)
+🟢 pos   – akahana/vit-base-cats-vs-dogs: ((91, 105),0.5203937240851382); ((90, 91),0.2571907167432796); ((105, 106),0.23847914535117454)
+🔵 neg   – akahana/vit-base-cats-vs-dogs: ((91, 92),-0.243505295376714); ((104, 119),-0.21079348887537466); ((119, 122),-0.19699354864208876)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/4_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/4_akahana_vit-base-cats-vs-dogs_shapley_only.png
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2522318B4A0>
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2522325F2F0>
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2521A3040E0>
+[SAVED] 3× kombinierte Top-3 Interaktionen pro Bild gespeichert
+
+===== Bild 6/8: images/dog2.jpg =====
+
+--- Evaluating google/vit-base-patch32-384 ---
+<PIL.Image.Image image mode=RGB size=384x384 at 0x25214E50DD0>
+Predicted class: golden retriever
+predicted logits: tensor(10.0153, device='cuda:0')
+ Logit full:  10.02
+ Logit empty: 0.25
+<PIL.Image.Image image mode=RGBA size=384x384 at 0x2521A53B830>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/5_google_vit-base-patch32-384_mixed.png
+yes shapiq: Interaction (54, 66): -0.8523
+yes shapiq: Interaction (55, 67): -0.7636
+yes shapiq: Interaction (54, 56): -0.6047
+yes shapiq: Interaction (56, 57): -0.4899
+yes shapiq: Interaction (43, 44): -0.4714
+yes shapiq: Interaction (87, 99): -0.4372
+yes shapiq: Interaction (56, 79): 0.4342
+yes shapiq: Interaction (44, 56): 0.4254
+yes shapiq: Interaction (67, 79): 0.4035
+yes shapiq: Interaction (78, 79): -0.3886
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – google/vit-base-patch32-384: ((54, 66),-0.8522747528622421); ((55, 67),-0.7635950220823806); ((54, 56),-0.6047029243636579)
+🟢 pos   – google/vit-base-patch32-384: ((56, 79),0.4342057981895375); ((44, 56),0.42538642561311624); ((67, 79),0.4035146494230057)
+🔵 neg   – google/vit-base-patch32-384: ((54, 66),-0.8522747528622421); ((55, 67),-0.7635950220823806); ((54, 56),-0.6047029243636579)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/5_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/5_google_vit-base-patch32-384_shapley_only.png
+
+--- Evaluating facebook/deit-tiny-patch16-224 ---
+<PIL.Image.Image image mode=RGB size=224x224 at 0x2521A554650>
+Predicted class: vizsla, Hungarian pointer
+predicted logits: tensor(6.0835, device='cuda:0')
+ Logit full:  6.08
+ Logit empty: -0.07
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x251C0789A90>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/5_facebook_deit-tiny-patch16-224_mixed.png
+yes shapiq: Interaction (26, 137): -0.2991
+yes shapiq: Interaction (7, 110): 0.2903
+yes shapiq: Interaction (24, 103): -0.2695
+yes shapiq: Interaction (98, 127): 0.2680
+yes shapiq: Interaction (110, 137): 0.2669
+yes shapiq: Interaction (156, 185): 0.2652
+yes shapiq: Interaction (111, 189): -0.2631
+yes shapiq: Interaction (97, 177): 0.2565
+yes shapiq: Interaction (62, 187): 0.2563
+yes shapiq: Interaction (46, 151): -0.2523
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – facebook/deit-tiny-patch16-224: ((26, 137),-0.2991299322528691); ((7, 110),0.290314456943242); ((24, 103),-0.26951796926880595)
+🟢 pos   – facebook/deit-tiny-patch16-224: ((7, 110),0.290314456943242); ((98, 127),0.26796292313499764); ((110, 137),0.2669429634334579)
+🔵 neg   – facebook/deit-tiny-patch16-224: ((26, 137),-0.2991299322528691); ((24, 103),-0.26951796926880595); ((111, 189),-0.2630884035836715)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/5_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/5_facebook_deit-tiny-patch16-224_shapley_only.png
+
+--- Evaluating akahana/vit-base-cats-vs-dogs ---
+<PIL.Image.Image image mode=RGB size=224x224 at 0x25214DD17C0>
+Predicted class: dog
+predicted logits: tensor(3.3251, device='cuda:0')
+ Logit full:  3.33
+ Logit empty: -0.43
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2521A575580>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/5_akahana_vit-base-cats-vs-dogs_mixed.png
+yes shapiq: Interaction (78, 79): -0.1426
+yes shapiq: Interaction (57, 162): 0.1424
+yes shapiq: Interaction (0, 139): 0.1343
+yes shapiq: Interaction (18, 57): 0.1340
+yes shapiq: Interaction (69, 85): -0.1329
+yes shapiq: Interaction (64, 78): 0.1327
+yes shapiq: Interaction (160, 178): 0.1318
+yes shapiq: Interaction (2, 100): 0.1287
+yes shapiq: Interaction (67, 127): -0.1241
+yes shapiq: Interaction (2, 63): 0.1214
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – akahana/vit-base-cats-vs-dogs: ((78, 79),-0.14257861661620394); ((57, 162),0.14244459200515597); ((0, 139),0.1343444656480807)
+🟢 pos   – akahana/vit-base-cats-vs-dogs: ((57, 162),0.14244459200515597); ((0, 139),0.1343444656480807); ((18, 57),0.13395160389729413)
+🔵 neg   – akahana/vit-base-cats-vs-dogs: ((78, 79),-0.14257861661620394); ((69, 85),-0.13290248380310762); ((67, 127),-0.12411154622502057)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/5_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/5_akahana_vit-base-cats-vs-dogs_shapley_only.png
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2520D0B2900>
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x252218FF290>
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x252245C7CB0>
+[SAVED] 3× kombinierte Top-3 Interaktionen pro Bild gespeichert
+
+===== Bild 7/8: images/dog3.jpg =====
+
+--- Evaluating google/vit-base-patch32-384 ---
+<PIL.Image.Image image mode=RGB size=384x384 at 0x251C7127A10>
+Predicted class: golden retriever
+predicted logits: tensor(13.2532, device='cuda:0')
+ Logit full:  13.25
+ Logit empty: 0.25
+<PIL.Image.Image image mode=RGBA size=384x384 at 0x25224596AE0>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/6_google_vit-base-patch32-384_mixed.png
+yes shapiq: Interaction (41, 53): -0.7362
+yes shapiq: Interaction (42, 53): 0.6160
+yes shapiq: Interaction (29, 53): 0.5873
+yes shapiq: Interaction (41, 66): -0.4678
+yes shapiq: Interaction (53, 65): -0.4587
+yes shapiq: Interaction (41, 78): -0.4017
+yes shapiq: Interaction (29, 42): -0.3962
+yes shapiq: Interaction (41, 101): -0.3724
+yes shapiq: Interaction (53, 78): -0.3426
+yes shapiq: Interaction (30, 41): -0.3424
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – google/vit-base-patch32-384: ((41, 53),-0.7361659181410706); ((42, 53),0.6159870777926033); ((29, 53),0.587316262219911)
+🟢 pos   – google/vit-base-patch32-384: ((42, 53),0.6159870777926033); ((29, 53),0.587316262219911)
+🔵 neg   – google/vit-base-patch32-384: ((41, 53),-0.7361659181410706); ((41, 66),-0.46776679117473224); ((53, 65),-0.458662280061244)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/6_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/6_google_vit-base-patch32-384_shapley_only.png
+
+--- Evaluating facebook/deit-tiny-patch16-224 ---
+<PIL.Image.Image image mode=RGB size=224x224 at 0x252218FD490>
+Predicted class: golden retriever
+predicted logits: tensor(8.7327, device='cuda:0')
+ Logit full:  8.73
+ Logit empty: 0.06
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x25219026330>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/6_facebook_deit-tiny-patch16-224_mixed.png
+yes shapiq: Interaction (48, 62): -0.8449
+yes shapiq: Interaction (47, 49): -0.4026
+yes shapiq: Interaction (33, 35): -0.3303
+yes shapiq: Interaction (61, 63): -0.3282
+yes shapiq: Interaction (47, 62): 0.3217
+yes shapiq: Interaction (62, 90): 0.3036
+yes shapiq: Interaction (49, 61): -0.2882
+yes shapiq: Interaction (35, 63): 0.2833
+yes shapiq: Interaction (62, 75): -0.2690
+yes shapiq: Interaction (35, 75): -0.2478
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – facebook/deit-tiny-patch16-224: ((48, 62),-0.8449493095216); ((47, 49),-0.4025700302981558); ((33, 35),-0.33027356372077166)
+🟢 pos   – facebook/deit-tiny-patch16-224: ((47, 62),0.32170627068034935); ((62, 90),0.3035892388456164); ((35, 63),0.28333186031080887)
+🔵 neg   – facebook/deit-tiny-patch16-224: ((48, 62),-0.8449493095216); ((47, 49),-0.4025700302981558); ((33, 35),-0.33027356372077166)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/6_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/6_facebook_deit-tiny-patch16-224_shapley_only.png
+
+--- Evaluating akahana/vit-base-cats-vs-dogs ---
+<PIL.Image.Image image mode=RGB size=224x224 at 0x25214DC8350>
+Predicted class: dog
+predicted logits: tensor(3.3350, device='cuda:0')
+ Logit full:  3.33
+ Logit empty: -0.43
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x25211B0F110>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/6_akahana_vit-base-cats-vs-dogs_mixed.png
+yes shapiq: Interaction (174, 175): -0.1954
+yes shapiq: Interaction (62, 76): -0.1356
+yes shapiq: Interaction (145, 162): -0.1351
+yes shapiq: Interaction (111, 136): -0.1328
+yes shapiq: Interaction (110, 178): -0.1317
+yes shapiq: Interaction (85, 86): -0.1306
+yes shapiq: Interaction (162, 174): -0.1299
+yes shapiq: Interaction (6, 160): 0.1295
+yes shapiq: Interaction (39, 41): 0.1224
+yes shapiq: Interaction (86, 191): -0.1207
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – akahana/vit-base-cats-vs-dogs: ((174, 175),-0.1954071586286702); ((62, 76),-0.13555886630949893); ((145, 162),-0.1351249448006084)
+🟢 pos   – akahana/vit-base-cats-vs-dogs: ((6, 160),0.12951365996137135); ((39, 41),0.12244594915208794)
+🔵 neg   – akahana/vit-base-cats-vs-dogs: ((174, 175),-0.1954071586286702); ((62, 76),-0.13555886630949893); ((145, 162),-0.1351249448006084)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/6_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/6_akahana_vit-base-cats-vs-dogs_shapley_only.png
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2521C5B2FC0>
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2521BB81AF0>
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2522327DA30>
+[SAVED] 3× kombinierte Top-3 Interaktionen pro Bild gespeichert
+
+===== Bild 8/8: images/dog4.jpg =====
+
+--- Evaluating google/vit-base-patch32-384 ---
+<PIL.Image.Image image mode=RGB size=384x384 at 0x2521D126DB0>
+Predicted class: golden retriever
+predicted logits: tensor(12.4680, device='cuda:0')
+ Logit full:  12.47
+ Logit empty: 0.25
+<PIL.Image.Image image mode=RGBA size=384x384 at 0x2521D126A20>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/7_google_vit-base-patch32-384_mixed.png
+yes shapiq: Interaction (55, 67): -0.9014
+yes shapiq: Interaction (54, 56): -0.6250
+yes shapiq: Interaction (54, 67): 0.5783
+yes shapiq: Interaction (67, 79): -0.5049
+yes shapiq: Interaction (43, 44): -0.4985
+yes shapiq: Interaction (55, 56): -0.4700
+yes shapiq: Interaction (54, 66): -0.4679
+yes shapiq: Interaction (43, 55): 0.4484
+yes shapiq: Interaction (44, 54): -0.4477
+yes shapiq: Interaction (67, 80): 0.4393
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – google/vit-base-patch32-384: ((55, 67),-0.9014303988461804); ((54, 56),-0.6250116721147819); ((54, 67),0.5783128937966965)
+🟢 pos   – google/vit-base-patch32-384: ((54, 67),0.5783128937966965); ((43, 55),0.44841615056862066); ((67, 80),0.4392976018551277)
+🔵 neg   – google/vit-base-patch32-384: ((55, 67),-0.9014303988461804); ((54, 56),-0.6250116721147819); ((67, 79),-0.5048838904965135)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/7_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/7_google_vit-base-patch32-384_shapley_only.png
+
+--- Evaluating facebook/deit-tiny-patch16-224 ---
+<PIL.Image.Image image mode=RGB size=224x224 at 0x252245969C0>
+Predicted class: vizsla, Hungarian pointer
+predicted logits: tensor(5.3336, device='cuda:0')
+ Logit full:  5.33
+ Logit empty: -0.07
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x25211B0F530>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/7_facebook_deit-tiny-patch16-224_mixed.png
+yes shapiq: Interaction (77, 91): -0.2536
+yes shapiq: Interaction (65, 77): -0.2402
+yes shapiq: Interaction (65, 79): -0.2396
+yes shapiq: Interaction (50, 63): -0.2282
+yes shapiq: Interaction (51, 63): -0.2269
+yes shapiq: Interaction (121, 135): -0.2087
+yes shapiq: Interaction (50, 51): -0.2076
+yes shapiq: Interaction (64, 78): 0.1997
+yes shapiq: Interaction (134, 135): -0.1970
+yes shapiq: Interaction (77, 80): -0.1904
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – facebook/deit-tiny-patch16-224: ((77, 91),-0.25360550198352755); ((65, 77),-0.24015535018518844); ((65, 79),-0.2396205150603661)
+🟢 pos   – facebook/deit-tiny-patch16-224: ((64, 78),0.1996826649175245)
+🔵 neg   – facebook/deit-tiny-patch16-224: ((77, 91),-0.25360550198352755); ((65, 77),-0.24015535018518844); ((65, 79),-0.2396205150603661)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/7_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/7_facebook_deit-tiny-patch16-224_shapley_only.png
+
+--- Evaluating akahana/vit-base-cats-vs-dogs ---
+<PIL.Image.Image image mode=RGB size=224x224 at 0x2520D0C4770>
+Predicted class: dog
+predicted logits: tensor(3.1204, device='cuda:0')
+ Logit full:  3.12
+ Logit empty: -0.43
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x251C053A930>
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+[SAVED] output/upsets_2er/7_akahana_vit-base-cats-vs-dogs_mixed.png
+yes shapiq: Interaction (64, 78): 0.2589
+yes shapiq: Interaction (79, 93): 0.1937
+yes shapiq: Interaction (147, 175): 0.1935
+yes shapiq: Interaction (156, 191): 0.1849
+yes shapiq: Interaction (175, 189): 0.1670
+yes shapiq: Interaction (63, 92): 0.1621
+yes shapiq: Interaction (121, 191): 0.1609
+yes shapiq: Interaction (98, 127): -0.1608
+yes shapiq: Interaction (164, 178): -0.1520
+yes shapiq: Interaction (2, 111): -0.1504
+C:\Users\enton\Desktop\visual\visualModels\visualModels\.venv\Lib\site-packages\shapiq\interaction_values.py:64: UserWarning: Index sparse is not a valid index as defined in {'kADD-SHAP', 'ELC', 'SV', 'CHGV', 'IGV', 'CHII', 'FSII', 'SGV', 'SII', 'FBII', 'EGV', 'EC', 'JointSV', 'STII', 'Co-Moebius', 'BII', 'BV', 'Moebius', 'k-SII', 'BGV'}. This might lead to unexpected behavior.
+  warn(
+🔴 mixed – akahana/vit-base-cats-vs-dogs: ((64, 78),0.25893845393716675); ((79, 93),0.19368493177056695); ((147, 175),0.19349505517853777)
+🟢 pos   – akahana/vit-base-cats-vs-dogs: ((64, 78),0.25893845393716675); ((79, 93),0.19368493177056695); ((147, 175),0.19349505517853777)
+🔵 neg   – akahana/vit-base-cats-vs-dogs: ((98, 127),-0.16082650668321766); ((164, 178),-0.15197698345769078); ((2, 111),-0.15044532759339016)
+[SKIPPED] Kein kombinierter 2er-Vergleichsplot (global), da keine Upset-Plots vorhanden.
+[SAVED] output/upsets_1er2er/7_vergleich_upsetplots_1er_2er.png
+[SAVED] output/histograms_shapleyValue/7_akahana_vit-base-cats-vs-dogs_shapley_only.png
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x25224359940>
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x2521A38DB80>
+<PIL.Image.Image image mode=RGBA size=224x224 at 0x25224358D10>
+[SAVED] 3× kombinierte Top-3 Interaktionen pro Bild gespeichert
